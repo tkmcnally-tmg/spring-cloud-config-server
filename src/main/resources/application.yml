@@ -1,0 +1,14 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: fraudservice
+  profiles:
+    active: development
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/tkmcnally-tmg/spring-cloud-config.git
+          skip-ssl-validation: true
